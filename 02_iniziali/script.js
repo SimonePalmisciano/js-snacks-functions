@@ -21,9 +21,8 @@ function primaLetteraNome(array) { // funzione che prende le inizili del nome
         const element = array[z]; // ogni elemento è names di z che è l'indice e va avanti di 1 alla volta quindi z=0 element = Anna
         // poi z=1 element = Luca poi z=2 element = Marco ecc...
 
-        // questo ciclo di lunghezza 1 prende l'indice della prima lettera di ogni parola
-
-        const iniziali = element[z]; // qui iniziali sarà z=0 iniziali = A poi si ripete ogni volta che il ciclo sopra compie 1 giro
+        const iniziali = element[0]; // non serve un ciclo for per fare questo poichè basta scrivere in questo modo
+        // cioè le iniziali sarà uguale a indice 0 dell'elemento ovvero iniziali = indice 0 di Anna = 'A' ecc...
 
         inizialiNomi.push(iniziali); // ogni giro viene pushata l'iniziale all'interno dell'array
 
