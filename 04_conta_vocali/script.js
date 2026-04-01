@@ -13,15 +13,13 @@ const word = 'javascript';
 function contaVocali(stringa) {
 
     let contatore = 0;
+
+    const vocali = 'aeiou';
     
     for (let z = 0; z < stringa.length; z++) {
         const singolaLettera = stringa[z];
 
-        if (singolaLettera === 'a' ||
-            singolaLettera ===  'e' ||
-            singolaLettera === 'i' ||
-            singolaLettera === 'o' ||
-            singolaLettera === 'u') {
+        if (vocali.includes(singolaLettera) ) {
 
         contatore += 1;
 
