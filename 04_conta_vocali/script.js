@@ -19,12 +19,23 @@ function contaVocali(stringa) {
     for (let z = 0; z < stringa.length; z++) {
         const singolaLettera = stringa[z];
 
-        if (vocali.includes(singolaLettera) ) {
+        // primo metodo molto basilare ma funzionale
 
-        contatore += 1;
+        // if (singolaLettera === 'a' ||
+        //     singolaLettera ===  'e' ||
+        //     singolaLettera === 'i' ||
+        //     singolaLettera === 'o' ||
+        //     singolaLettera === 'u') {
+
+        // contatore += 1;
+
+        // }
+
+        if (vocali.includes(singolaLettera)) {
+
+            contatore += 1;
 
         }
-
     }
 
     return contatore;
