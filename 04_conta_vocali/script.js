@@ -10,32 +10,32 @@ const word = 'javascript';
 // si può fare questo con un ciclo for per controllare ogni lettera
 // se è una vocale in contatore diventa + 1 se non lo è non restituisce nulla
 
-// function contaVocali(stringa) {
+function contaVocali(stringa) {
 
-//     const contatore = 0;
+    let contatore = 0;
 
-//     let singolaLettera = '';
+    let singolaLettera = '';
 
-//     for (let z = 0; z < stringa.length; z++) {
+    for (let z = 0; z < stringa.length; z++) {
 
-//         singolaLettera = stringa[z];
+        singolaLettera += stringa[z];
 
-//     }
+    }
 
-//     if (singolaLettera === ('a', 'e', 'i', 'o', 'u')) {
-//         contatore += 1;
+    if (singolaLettera === 'a' || singolaLettera ===  'e' || singolaLettera === 'i' || singolaLettera === 'o' || singolaLettera === 'u') {
+        contatore += 1;
 
-//     }
+    }
 
-//     return contatore;
-// }
+    return contatore;
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-// let vocaliPresenti = contaVocali(word);
+let vocaliPresenti = contaVocali(word);
 
-// console.log(vocaliPresenti);
+console.log(vocaliPresenti);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
@@ -45,13 +45,13 @@ const word = 'javascript';
 // ALTRO METODO
 ////////////////////////////////////////////////////////////////////////////
 
-function haVocali (stringa) {
+// function haVocali (stringa) {
     
-    const vocali = stringa.match(/[aeiou]/gi); 
+//     const vocali = stringa.match(/[aeiou]/gi); 
 
-    return vocali ? vocali.length: 0;
-}
+//     return vocali ? vocali.length: 0;
+// }
 
-let vocaliPresenti = haVocali(word);
+// let vocaliPresenti = haVocali(word);
 
-console.log(vocaliPresenti);
+// console.log(vocaliPresenti);
